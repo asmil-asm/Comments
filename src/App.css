@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.comments{
+display:  flex;
+flex-direction: column;
+align-items: center; 
+width: 100%; 
+min-height: 100vh;
+position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comments .shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.397);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.comments button{
+    padding: 5px 10px ;
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    color: white;
+    
 }
-
-.App-link {
-  color: #61dafb;
+.comments .box{
+display: flex;
+align-items: center;
+height: 200px;
+width: 600px;
+background-color: #eee;
+margin-top: 10px;
+padding: 10px;
+border-radius: 10px;
+justify-content: space-between;
 }
+.comments .box:hover{
+    border: 1px solid aqua;
+}
+.comments .box .text div{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.comments .box .text div h4{
+    font-size: 20px;
+;
+}
+.comments .box .text div p{
+    font-size: 15px;
+}
+.comments .box .buttons{
+    display: flex;
+    gap:10px
+}
+.comments .box  .buttons button{
+    padding: 5px 10px ;
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+.comments .loading{
+    position: fixed;
+      left:0;
+    top:0;
+    color: white;
+    font-size: 30px;
+    font:bold;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.247);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+form{
+ position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+     width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+        background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+
+}
+form button{
+        padding: 5px 10px ;
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    
+}
+.moudel .DeletMoudel{
+ position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+     width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+        background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+}
+.moudel .DeletMoudel div{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.moudel .DeletMoudel div span{
+    background-color: aqua;
+    color: white;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    cursor:pointer;
 }
